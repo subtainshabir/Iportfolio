@@ -1,0 +1,24 @@
+﻿@page
+@model Iportfolio.Pages.Admin.SkillsModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-8 justify-content-center">
+        <h2>Please Add Skill</h2>
+        <hr />
+
+        <form method="post">
+            <div>
+                <label class="form-label">Skill Name</label>
+                <input asp-for="skill.SkillName" class="form-control"/>
+                <span class="text-danger" asp-validation-for="skill.SkillName"></span>
+            </div>
+            <div>
+                <label class="form-label">Percentage</label>
+                <input asp-for="skill.Percentage" class="form-control" />
+                <span class="text-danger" asp-validation-for="skill.Percentage"></span>
+            </div>
+            <input type="submit" value="Add Skill" class="btn btn-primary" />
+        </form>
+    </div>
+</div>

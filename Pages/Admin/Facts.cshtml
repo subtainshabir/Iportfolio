@@ -1,0 +1,44 @@
+﻿@page
+@model Iportfolio.Pages.Admin.FactsModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-8 justify-content-center">
+        <h2>Add Facts Please</h2>
+        <hr />
+        <form method="post">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Happy Client
+                </label>
+                <input class="form-control" asp-for="facts.HappyClient" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Projects
+                </label>
+                <input class="form-control" asp-for="facts.Projects" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Hours of Support
+                </label>
+                <input class="form-control" asp-for="facts.HoursOfSupport" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    HardWorkers
+                </label>
+                <input class="form-control" asp-for="facts.HardWorkers" />
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <br />
+                <input type="submit" class="btn btn-primary" value="Add Experience" />
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

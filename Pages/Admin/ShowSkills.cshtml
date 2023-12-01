@@ -1,0 +1,40 @@
+﻿@page
+@model Iportfolio.Pages.Admin.ShowSkillsModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-10 justify-content-center">
+        <h2>Show Skills Page</h2>
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Skill Name</th>
+                    <th scope="col">Percentage</th>
+                    <th scope="col" colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.skills)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.SkillName</td>
+                        <td>@item.Percentage</td>
+                        <td>
+                            <a asp-page-handler="Update" asp-route-id="@item.Id" class="btn btn-success">Update</a>
+
+                        </td>
+                        <td>
+                            <a asp-page-handler="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+
+                        </td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

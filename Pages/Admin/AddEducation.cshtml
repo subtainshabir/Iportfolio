@@ -1,0 +1,61 @@
+﻿@page
+@model Iportfolio.Pages.Admin.AddEducationModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center">
+        <h2>Add Education Form</h2>
+        <hr />
+        <form method="post">  
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Degree Tilte
+                </label>
+                <input class="form-control" asp-for="education.DegreeTitle"/>
+                <span class="text-danger" asp-validation-for="education.DegreeTitle"></span>
+            </div>
+
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Start Year
+                </label>
+                <input class="form-control" asp-for="education.StartClass" />
+            </div>
+            <span class="text-danger" asp-validation-for="education.StartClass"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    End Year
+                </label>
+                <input class="form-control" asp-for="education.EndClass" />
+            </div>
+            <span class="text-danger" asp-validation-for="education.EndClass"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Institute Name
+                </label>
+                <input class="form-control" asp-for="education.InstituteName" />
+            </div>
+            <span class="text-danger" asp-validation-for="education.InstituteName"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description
+                </label>
+                <textarea class="form-control" asp-for="education.Description">
+                </textarea>
+                <span class="text-danger" asp-validation-for="education.Description"></span>
+            </div>
+            <br />
+            <div class="col-md-12 justify-content-center">
+               
+         
+                <input class="btn btn-primary" type="submit" value="Add Education" />
+            </div>
+
+        </form>
+
+    </div>
+</div>

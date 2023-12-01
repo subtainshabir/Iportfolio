@@ -1,0 +1,33 @@
+﻿@page
+@model Iportfolio.Pages.Admin.AddServicesModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-8 justify-content-center">
+        <h2>Add Services Please</h2>
+        <hr />
+        <form method="post">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Service Title 
+                </label>
+                <input class="form-control" asp-for="service.ServiceTitle" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description
+                </label>
+                <input class="form-control" asp-for="service.Description" />
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <br />
+                <input type="submit" class="btn btn-primary" value="Add Experience" />
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+

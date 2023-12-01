@@ -1,0 +1,35 @@
+﻿@page
+@model Iportfolio.Pages.Admin.UpdateSocialModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-8 justify-content-center">
+        <h2>Please Updaate Social Network Information</h2>
+        <hr />
+
+        <form method="post">
+            <div>
+                <label class="form-label">Facebook</label>
+                <input asp-for="social.Facebook" class="form-control" />
+                <input class="form-control" hidden asp-for="social.Id" />
+            </div>
+            <div>
+                <label class="form-label">Instagram</label>
+                <input asp-for="social.Instagram" class="form-control" />
+            </div>
+            <div>
+                <label class="form-label">Skype</label>
+                <input asp-for="social.Skype" class="form-control" />
+            </div>
+            <div>
+                <label class="form-label">LinkdIn</label>
+                <input asp-for="social.LinkdIn" class="form-control" />
+            </div>
+            <div>
+                <br />
+                <input type="submit" value="Update Social Networks" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>

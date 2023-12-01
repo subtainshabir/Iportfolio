@@ -1,0 +1,48 @@
+﻿@page
+@model Iportfolio.Pages.Admin.UpdateEducationModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center">
+        <h2>Update Education</h2>
+        <hr />
+        <form method="post">
+            <div class="col-md-12 justify-content-center">
+            <input class="form-control" hidden asp-for="education.Id" />
+                <label class="form-label">
+                    Degree Tilte
+                </label>
+                <input class="form-control" asp-for="education.DegreeTitle" />
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Start Year
+                </label>
+                <input class="form-control" asp-for="education.StartClass" />
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    End Year
+                </label>
+                <input class="form-control" asp-for="education.EndClass" />
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description
+                </label>
+                <textarea class="form-control" asp-for="education.Description">
+                </textarea>
+            </div>
+            <br />
+            <div class="col-md-12 justify-content-center">
+
+                <input class="btn btn-primary" type="submit" value="Add Education" />
+            </div>
+
+        </form>
+
+    </div>
+</div>

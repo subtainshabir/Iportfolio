@@ -1,0 +1,104 @@
+﻿@page
+@model Iportfolio.Pages.Admin.ShowProfileModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center">
+        <h2>Add Profile Form</h2>
+        <hr />
+        <form method="post" enctype="multipart/form-data">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Name
+                </label>
+                <input class="form-control" asp-for="profile.Name" />
+                <input class="form-control" hidden asp-for="profile.Id" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Phone
+                </label>
+                <input class="form-control" asp-for="profile.Phone" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Email
+                </label>
+                <input class="form-control" asp-for="profile.Email" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Age
+                </label>
+                <input class="form-control" asp-for="profile.Age" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Birthday
+                </label>
+                <input class="form-control" asp-for="profile.BirthDay" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Degree
+                </label>
+                <input class="form-control" asp-for="profile.Degree" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Website
+                </label>
+                <input class="form-control" asp-for="profile.Website" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    City
+                </label>
+                <input class="form-control" asp-for="profile.City" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Freelance
+                </label>
+                <input class="form-control" asp-for="profile.FreelanceStatus" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Image
+                </label>
+                <input class="form-control" asp-for="profile.Photo" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description One
+                </label>
+                <textarea class="form-control" asp-for="profile.DescOne"></textarea>
+                <input class="form-control" hidden asp-for="profile.Image" />
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description Two
+                </label>
+                <textarea class="form-control" asp-for="profile.DesTwo"></textarea>
+
+            </div>
+
+
+
+
+            <br />
+            <div class="col-md-12 justify-content-center">
+
+                <input class="btn btn-success" type="submit" value="Update Profile" />
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-4 justify-content-center">
+        <div class="margin-top:100px; margin-left:100px">
+            <img src="~/Images/@Model.profile.Image" height="180px" width="180px"/>
+            
+        </div>
+    </div>
+   
+</div>

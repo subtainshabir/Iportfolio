@@ -1,0 +1,50 @@
+﻿@page
+@model Iportfolio.Pages.Admin.Update_ExperienceModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-8 justify-content-center">
+        <h2>Update Experience Please</h2>
+        <hr />
+        <form method="post">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Job Title
+                </label>
+                <input class="form-control" asp-for="experience.JobTitle" />
+                <input class="form-control" hidden asp-for="experience.Id" />
+
+                <span class="text-danger" asp-validation-for="experience.JobTitle"></span>
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Start Year
+                </label>
+                <input class="form-control" asp-for="experience.StartYear" />
+                <span class="text-danger" asp-validation-for="experience.StartYear"></span>
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    End Year
+                </label>
+                <input class="form-control" asp-for="experience.EndYear" />
+                <span class="text-danger" asp-validation-for="experience.EndYear"></span>
+            </div>
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Description
+                </label>
+                <input class="form-control" asp-for="experience.Desc" />
+                <span class="text-danger" asp-validation-for="experience.Desc"></span>
+            </div>
+
+            <div class="col-md-12 justify-content-center">
+                <br />
+                <input type="submit" class="btn btn-primary" value="Add Experience" />
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

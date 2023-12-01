@@ -1,0 +1,57 @@
+﻿@page
+@model Iportfolio.Pages.Admin.UpdateTestimonialModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center">
+        <h2>Add Testimonial Form</h2>
+        <hr />
+        <form method="post" enctype="multipart/form-data">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Name
+                </label>
+                <input class="form-control" asp-for="testimonials.Name" />
+                <span class="text-danger" asp-validation-for="testimonials.Name"></span>
+            </div>
+
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Occupation
+                </label>
+                <input class="form-control" asp-for="testimonials.Occupation" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonials.Occupation"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Review
+                </label>
+                <input class="form-control" asp-for="testimonials.Review" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonials.Review"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Image
+                </label>
+                <input class="form-control" asp-for="testimonials.Photo" />
+                <input class="form-control" hidden asp-for="testimonials.Image" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonials.Photo"></span>
+
+            <br />
+            <div class="col-md-12 justify-content-center">
+                <input class="btn btn-primary" type="submit" value="Update Testomonial" />
+            </div>
+        </form>
+
+    </div>
+    <div class="col-md-4 justify-content-center">
+        <div class="margin-top:100px; margin-left:100px">
+            <img src="~/Images/@Model.testimonials.Image" height="180px" width="180px" />
+
+        </div>
+    </div>
+</div>

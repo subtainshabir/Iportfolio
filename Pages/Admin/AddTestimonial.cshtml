@@ -1,0 +1,53 @@
+﻿@page
+@model Iportfolio.Pages.Admin.AddTestimonialModel
+@{
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center">
+        <h2>Add Testimonial Form</h2>
+        <hr />
+        <form method="post" enctype="multipart/form-data">
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Name
+                </label>
+                <input class="form-control" asp-for="testimonial.Name" />
+                <span class="text-danger" asp-validation-for="testimonial.Name"></span>
+            </div>
+
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Occupation
+                </label>
+                <input class="form-control" asp-for="testimonial.Occupation" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonial.Occupation"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Review
+                </label>
+                <input class="form-control" asp-for="testimonial.Review" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonial.Review"></span>
+
+            <div class="col-md-12 justify-content-center">
+                <label class="form-label">
+                    Image
+                </label>
+                <input class="form-control" asp-for="testimonial.Photo" />
+            </div>
+            <span class="text-danger" asp-validation-for="testimonial.Photo"></span>
+
+            <br />
+            <div class="col-md-12 justify-content-center">
+
+
+                <input class="btn btn-primary" type="submit" value="Add Testomonial" />
+            </div>
+
+        </form>
+
+    </div>
+</div>

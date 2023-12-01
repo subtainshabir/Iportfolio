@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>False|2023-11-30T08:23:37.0860060Z;False|2023-11-30T13:17:31.9667001+05:00;False|2023-11-30T13:14:21.1417310+05:00;False|2023-11-30T13:12:15.4734542+05:00;False|2023-11-30T12:52:28.6238198+05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="HostConStr">
+      <Value>Data Source=SQL5106.site4now.net%3bInitial Catalog=db_aa2328_subtaindb%3bUser Id=db_aa2328_subtaindb_admin%3bPassword=subtain%40123</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="myConStr">
+      <Value>Data Source=SQL5106.site4now.net%3bInitial Catalog=db_aa2328_subtaindb%3bUser Id=db_aa2328_subtaindb_admin%3bPassword=subtain%40123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
